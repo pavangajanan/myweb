@@ -1,5 +1,76 @@
-<h1>
-	Hi THis Pavan
-	GAsertydfg
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavan the Great</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            color: white;
+        }
+        h1 {
+            font-size: 100px;
+            font-weight: bold;
+            text-align: center;
+            background: linear-gradient(45deg, #6a11cb, #2575fc);
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: gradientAnimation 5s infinite alternate;
+        }
+        @keyframes gradientAnimation {
+            0% {
+                background: linear-gradient(45deg, #ff7e5f, #feb47b);
+            }
+            50% {
+                background: linear-gradient(45deg, #6a11cb, #2575fc);
+            }
+            100% {
+                background: linear-gradient(45deg, #ff7e5f, #feb47b);
+            }
+        }
+        p {
+            font-size: 24px;
+            text-align: center;
+            font-weight: 500;
+            color: #fff;
+            margin-top: 20px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        }
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: moveCircle 4s infinite ease-in-out;
+        }
+        @keyframes moveCircle {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
 
-</h1>
+    <div class="circle"></div>
+    <h1>Pavan the Great</h1>
+    <p>Embrace the colors of greatness!</p>
+
+</body>
+</html>
+
